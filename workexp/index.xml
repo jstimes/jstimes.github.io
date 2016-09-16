@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workexps on My Portfolio</title>
+    <link>https://jstimes.github.io/workexp/</link>
+    <description>Recent content in Workexps on My Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Sep 2016 19:17:43 -0500</lastBuildDate>
+    <atom:link href="https://jstimes.github.io/workexp/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>LinguiSystems, Inc. Web Developer</title>
+      <link>https://jstimes.github.io/workexp/linguisystems/</link>
+      <pubDate>Thu, 15 Sep 2016 19:17:43 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/workexp/linguisystems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teaching Assistant - Data Structures</title>
+      <link>https://jstimes.github.io/workexp/ta/</link>
+      <pubDate>Thu, 15 Sep 2016 19:17:31 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/workexp/ta/</guid>
+      <description>&lt;p&gt;Details about my teaching assistantship for Com S 228 Intro. to Data Structures and Algorithms.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Principal Financial Group 2014</title>
+      <link>https://jstimes.github.io/workexp/pf2014/</link>
+      <pubDate>Thu, 15 Sep 2016 19:17:23 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/workexp/pf2014/</guid>
+      <description>&lt;p&gt;Details about my internship with Principal Financial Group in summer 2014.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Epic Intern 2015</title>
+      <link>https://jstimes.github.io/workexp/epic2015/</link>
+      <pubDate>Thu, 15 Sep 2016 19:17:15 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/workexp/epic2015/</guid>
+      <description>&lt;p&gt;Details about my internship with Epic in Summer 2015.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Epic Intern 2016</title>
+      <link>https://jstimes.github.io/workexp/epic2016/</link>
+      <pubDate>Thu, 15 Sep 2016 19:17:11 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/workexp/epic2016/</guid>
+      <description>&lt;p&gt;Details about my internship with Epic in Summer 2015.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Research Assistant - Robotics Lab</title>
+      <link>https://jstimes.github.io/workexp/ra/</link>
+      <pubDate>Thu, 15 Sep 2016 19:17:03 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/workexp/ra/</guid>
+      <description>&lt;p&gt;Details about my research assistantship&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
