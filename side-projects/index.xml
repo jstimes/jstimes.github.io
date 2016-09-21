@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Side-projects on My Portfolio</title>
+    <link>https://jstimes.github.io/side-projects/</link>
+    <description>Recent content in Side-projects on My Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Sep 2016 20:45:24 -0500</lastBuildDate>
+    <atom:link href="https://jstimes.github.io/side-projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>WhackyBalls</title>
+      <link>https://jstimes.github.io/side-projects/WhackyBalls/</link>
+      <pubDate>Mon, 05 Sep 2016 20:45:24 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/side-projects/WhackyBalls/</guid>
+      <description>&lt;p&gt;&lt;a href=&#39;http://github.com/jstimes/WhackyBalls.git&#39;&gt;WhackyBalls&lt;/a&gt; is an Android game where users rotate their device to roll a ball along different directions on a platform. The goal is to knock other balls off while keeping your ball on the platform.&lt;/p&gt;
+
+&lt;p&gt;Currently the game is just a prototype. There are AI balls that use some simple path planning to attempt to knock the user&amp;rsquo;s ball off. When the user falls off, his ball drops back on the platform, but the AI balls are gone for good. In the future I hope to make some more sophisticated AI, more eye-catching backgrounds/colors, and a networking component where users can play against friends in real-time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PriceFinder</title>
+      <link>https://jstimes.github.io/side-projects/PriceFinder/</link>
+      <pubDate>Mon, 08 Aug 2016 20:45:24 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/side-projects/PriceFinder/</guid>
+      <description>&lt;p&gt;&lt;a href=&#39;http://github.com/jstimes/PriceFinder.git&#39;&gt;PriceFinder&lt;/a&gt; is a project I started working on in Spring 2016, and stopped working on in August 2016. The main idea of the app is to let users search for products they are interested in. Results are pulled in from a variety of sites using their API (Amazon, Best Buy, Walmart, etc.). With these results, users select the ones they would consider purchasing (e.g. maybe the user doesn&amp;rsquo;t want to buy from eBay), and give a target prices they would like to buy at. Those items are saved, and re-searched for on a daily basis to see if any of their prices have fallen below the target price. This allows them to only use the app when they have a new product they desire, and be notified when it is affordable for them.&lt;/p&gt;
+
+&lt;p&gt;Users can browse through their saved searches, and update the target price, or delete specific items. Additionally, each individual item has a link to its site so the user can buy it directly without having to back out of the app, open a browser, and search for it again. There was a recommended tab where I hoped to provide suggestions based on similar users, but have not implemented it as I ended up not using a server to store data and instead use the device&amp;rsquo;s local storage.&lt;/p&gt;
+
+&lt;p&gt;The Android version is functional, but has a lot of UI work still to be done. As I was wrapping up the iOS component, one of the last things I was doing was incorporating the Amazon API (one of the best online vendors and has support for retrieving recommended items). I discovered that their terms of service agreement does not allow any mobile app to display their Product Advertising content without written consent. Upon discovering that, I looked into the other API terms&amp;rsquo; of service I was using and they have some disappointing requirements as well. Until I find a workaround/get written consent from Amazon, this project is being put on hold.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assembly</title>
+      <link>https://jstimes.github.io/side-projects/Assembly/</link>
+      <pubDate>Sun, 21 Feb 2016 20:45:24 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/side-projects/Assembly/</guid>
+      <description>&lt;p&gt;This was a hackathon project that a team of 4 of us completed last spring. Our hackathon submission containing all the project details and some screenshots can be found &lt;a href=&#39;http://devpost.com/software/assembly-e105md&#39;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I personally worked on the AngularJS client side of the project, and helped with design and styling. It was a fun experience as none of our team members had any prior experience with Angular, yet after 36 hours and way too much caffeine, we had completed a fully functional, professional looking web application.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cash-Money</title>
+      <link>https://jstimes.github.io/side-projects/Cash-Money/</link>
+      <pubDate>Thu, 19 Feb 2015 20:45:24 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/side-projects/Cash-Money/</guid>
+      <description>&lt;p&gt;&lt;a href=&#39;https://github.com/isumdc/cashmoney-android&#39;&gt;Cash-Money&lt;/a&gt; was a game I developed for the mobile development club. It was an idea I had while messing around with drag-and-drop functionality in Android. Basically, the user starts a game, then gold and silver coins start falling from the top of the screen. The goal is to drag as many of them as possible into the corresponding piggy banks at the bottom of the screen before they fall out of the screen&amp;rsquo;s window.&lt;/p&gt;
+
+&lt;p&gt;The player gets three lives, and every time a coin falls out, they lose one. As time progresses, the coins start falling faster and faster. At the end of the game, the user&amp;rsquo;s high score is tracked.&lt;/p&gt;
+
+&lt;p&gt;I developed this game before I learned about OpenGL, and so it&amp;rsquo;s a little hacky but works. Now that I understand OpenGL ES, I&amp;rsquo;d like to someday redo this app properly, giving it some more functionality and some images &amp;amp; icons that aren&amp;rsquo;t atrocious looking.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MyReminder</title>
+      <link>https://jstimes.github.io/side-projects/MyReminder/</link>
+      <pubDate>Thu, 20 Nov 2014 20:45:24 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/side-projects/MyReminder/</guid>
+      <description>&lt;p&gt;&lt;a href=&#39;https://github.com/jstimes/MyReminder&#39;&gt;MyReminder&lt;/a&gt; was my first ever Android app (other than random experiments). It allowed the user to create reminders by giving a title, and desired time to go off. At that specified time, the app sends the user a notification. Nothing too spectacular, but it was something I was able to use regularly to remind myself of things.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

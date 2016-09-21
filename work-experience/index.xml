@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Work-experiences on My Portfolio</title>
+    <link>https://jstimes.github.io/work-experience/</link>
+    <description>Recent content in Work-experiences on My Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Sep 2016 19:17:03 -0500</lastBuildDate>
+    <atom:link href="https://jstimes.github.io/work-experience/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Research Assistant - Robotics Lab</title>
+      <link>https://jstimes.github.io/work-experience/ra/</link>
+      <pubDate>Mon, 19 Sep 2016 19:17:03 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/work-experience/ra/</guid>
+      <description>&lt;p&gt;In Fall 2015, I began working as an undergraduate research assistant for Dr. Yan-bin Jia in his robotics lab. One of his PhD. students, Feifei Wang has published work on analyzing the impact of 3D rigid objects. Given their pre-impact velocities, orientations, and other physical parameters, her work is able to analyze how long the objects will stick or slide against each other, and computes the post-impact velocities and orientations. My project has been to create a graphical interface for others to experiment with her work.&lt;/p&gt;
+
+&lt;p&gt;Over the past year, I have developed a C++/OpenGL interface where users can select from a variety of objects, position them in space, and give them initial velocities. Upon clicking &amp;lsquo;Run&amp;rsquo;, the objects begin moving. I developed a collision detection algorithm for &lt;a href=&#39;https://en.wikipedia.org/wiki/Superquadrics&#39;&gt;Superquadric&lt;/a&gt; objects, and when it detects objects have collided, it runs Feifei&amp;rsquo;s code to simulate the impact, and then continues the animation base on the post-impact results.&lt;/p&gt;
+
+&lt;p&gt;I also developed a program to compute the angular inertia and principal frame of tetrahedral meshes, properties of objects that are necessary in order to analyze their impacts and motion. A tetrahedral mesh is a collection of small tetrahedra that together for more complex shapes, for example a bowling pin, a person, and other objects that can&amp;rsquo;t be mathematically modeled.&lt;/p&gt;
+
+&lt;p&gt;The collsion detection scheme has been the most challenging aspect of the project. Essentially we constructed a system of 4 equations in 4 variables for 2 superquadrics. The solution to this system gives the closest points between the two shapes, and can be used for detecting collision. I used Newton&amp;rsquo;s method for approximating systems to solve the equations efficiently, given a close initial estimate. Unfortunately, several superquadrics have edges and points where derivatives are not defined, and I thus had to develop a routine that detected if Newton&amp;rsquo;s method was converging to one of those unsatisfactory points, and either correct it or scan along the edge in a brute force manner to get the closest point.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m currently working on porting the application to the web. I&amp;rsquo;ve been trying to use a tool &lt;a href=&#39;https://kripken.github.io/emscripten-site/index.html&#39;&gt;Emscripten&lt;/a&gt; to cross compile the C++ into efficient JavaScript assembly and WebGL. Most of it has converted just fine, but I&amp;rsquo;m still working on getting certain functionality to work correctly.&lt;/p&gt;
+
+&lt;p&gt;After the web version is published, I will begin an independent research project and help some of the PhD students with their work as well. I also aim to develop a tetrahedral mesh collision detection algorithm so many more shapes can be used in the impact interface.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Epic Intern 2016</title>
+      <link>https://jstimes.github.io/work-experience/epic2016/</link>
+      <pubDate>Wed, 17 Aug 2016 19:17:11 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/work-experience/epic2016/</guid>
+      <description>&lt;p&gt;Epic is an electronic healthcare provider. One of their main focuses is patient engagement, as many patients feel they know too little about their healthcare or have little control over it. MyChart is Epic&amp;rsquo;s app (web and mobile) that allows patients to log in and view their health information, schedule appointments, send messages to their providers, and more. In Summer 2016 I worked on the MyChart Mobile team and was tasked with providing an alternate way of navigating the app - specifically via voice.&lt;/p&gt;
+
+&lt;p&gt;The project definition was intentionally vague; it was something along the lines of &amp;lsquo;Build a voice assistant for MyChart, something similar to Siri.&amp;rsquo; The initial part of my summer was spent understanding how users use the app, what issues they have, and how other voice assistants are developed and used. I also spent some time researching NLP and machine learning techniques to get a sense of how to interpret user commands.&lt;/p&gt;
+
+&lt;p&gt;I was able to quickly get a prototype of my voice assistant incorporated into the MyChart iOS app. Fortunately, iOS 10 beta came out just in time and provided me with an easy to use speech recognition API. For the text processing, I used a hand-crafted decision tree. The way it works was that it would first try to determine if the command was related to appointments. If so, it would go on to check if the user said something related to scheduling, or viewing, or cancelling. If there were no words pertaining to appointments, it would go on to check if the user was talking about messages, and then check for more specifics if so, and so on. This approach was naive but very effective since there is a limited amount of activities the user can perform with the app, so it was easy to associate a set of keywords with each action. Additionally, I created some text processing utilities to extract time information (e.g. next appointment vs. previous appointment) and person information (deduce that the user was referrring to a specific provider or another patient with their command).&lt;/p&gt;
+
+&lt;p&gt;After getting the processing done, it was relatively simple to navigate the user to the corresponding page or action they requested. Whenever there was not enough information or something was ambiguous, the assistant would prompt for more information. This consisted of reading through the existing code to learn how the app was navigated, and what parameters were required for the various actions.&lt;/p&gt;
+
+&lt;p&gt;The final phase of my project involved developing an intuitive, eye-catching user experience. Ultimately, the voice assistant view controller resembled Siri in many ways. The voice assistant&amp;rsquo;s prompts appeared from the left side of the screen, and the user&amp;rsquo;s responses appeared on the right, similar to how a text messaging app looks. The user could scroll through the conversation if there were more prompts than could fit in the screen. The voice recognition automatically started listening after the assistant makes a prompt, and automatically stops when it detects the user stopped speaking. When a user is prompted to choose an option from a limited set of responses, those options are presented to them as sliding in from the top. This is extremely helpful for when they are prompted for a person&amp;rsquo;s name, as many names are hard to detect by the speech recogntion, so they could simply tap an option to continue.&lt;/p&gt;
+
+&lt;p&gt;All in all, this was one of my favorite projects I&amp;rsquo;ve ever worked on. It was quite an exciting project to show off, and I even was fortunate enough to demo it to one of Epic&amp;rsquo;s customers. Additionally, this project was an incredible learning experience for me. I learned Objective-C as the summer went on, and became very fluent in iOS development. Although I didn&amp;rsquo;t get to do very much machine learning, it was fascinating to look into and I&amp;rsquo;m eager to learn more about it in the future.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Epic Intern 2015</title>
+      <link>https://jstimes.github.io/work-experience/epic2015/</link>
+      <pubDate>Mon, 17 Aug 2015 19:17:15 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/work-experience/epic2015/</guid>
+      <description>&lt;p&gt;In summer 2015, I interned with Epic and was placed on a project with 2 other interns. Some of Epic&amp;rsquo;s competitors had begun using real-time tracking systems in their customer&amp;rsquo;s hospitals and clinics. My team and I were tasked with protyping a similar system for Epic.&lt;/p&gt;
+
+&lt;p&gt;Epic targets the largest healthcare organizations, and so it is not uncommon for patients to get lost and inefficiencies to occur in the organization&amp;rsquo;s operations. To address these problems, we took an existing hospital mapping application, and modified it to be able to update in real-time. At the time, we made the assumption that the customer would choose a tracking system (such as iBeacons), and focused on how to transmit that data, display it, and run analytics on it.&lt;/p&gt;
+
+&lt;p&gt;I personally worked on the real-time data transfer. I did this using SignalR, a networking framework created by Microsoft that first tries to use web-sockets, and falls back to long-polling and other methods based on what is currently available.&lt;/p&gt;
+
+&lt;p&gt;After accomplishing that, I began developing a simulator to generate some data for our team to work with (none of our customers had a system like this yet so there was no pre-existing data). The simulator consisted of an HTML/JavaScript frontend where users could specify a whole host of parameters to be used in the simulation. These included: number of doctors, number of nurses, min/max waiting times, min/max examination times, number of exam rooms, procedure rooms, and many more. Upon clicking run, these parameters were sent to a multi-threaded Cache program I developed that ran the simulation, and stored the data in our system. The other members of my team could then use this data to examine their analytics results. Although this was primarily for generating test data, it could also be used by clinic adminstrators to test how their organization may operate in various conditions.&lt;/p&gt;
+
+&lt;p&gt;Over the summer I learned some new technologies (SignalR and Cache), and became all to familiar with how NOT to write multi-threaded code :) In summary, it was a very fun project, and a great learning experience for me.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Teaching Assistant - Data Structures</title>
+      <link>https://jstimes.github.io/work-experience/ta/</link>
+      <pubDate>Sun, 10 May 2015 19:17:31 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/work-experience/ta/</guid>
+      <description>&lt;p&gt;From Fall 2014-Spring 2015, I worked as a teaching assistant for Com S 228 Intro. to Data Structures and Algorithms. My responsibilities were:
+&lt;ul&gt;
+&lt;li&gt;Teach a recitation class once a week. This primarily consisted of reviewing the concepts covered in lecture, going through examples (both on the board and in code), and answering any questions about the class or projects&lt;/li&gt;
+&lt;li&gt;Hold office hours once a week. Generally students would come in to get help on projects, very rarely did they have questions on the class content&amp;hellip;&lt;/li&gt;
+&lt;li&gt;Grade student projects. If the student wrote perfect code, it simply consisted of running the unit tests, seeing that they got 100%, and doing a double check to ensure certain methods fit in the specified Big-O run-time. Often when the students didn&amp;rsquo;t ace the project, many test cases would fail unfairly, just because one or two methods were off. Because of this, I often had to analyze student code to find a fix their mistakes so they weren&amp;rsquo;t overly penalized.&lt;/li&gt;
+&lt;li&gt;Grade exams. Pretty straightforward&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Principal Financial Group Intern</title>
+      <link>https://jstimes.github.io/work-experience/pf2014/</link>
+      <pubDate>Tue, 12 Aug 2014 19:17:23 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/work-experience/pf2014/</guid>
+      <description>&lt;p&gt;Over the summer of 2014, I interned with Principal Financial Group on the Cross-platform automation team. This was an infrastructure development team that was tasked with deploying, maintaining, and reporting on all of the virtual servers used across the company, with an emphasis on automating these tasks.&lt;/p&gt;
+
+&lt;p&gt;Some of the smaller tasks I completed that summer were:
+&lt;ul&gt;
+&lt;li&gt;Writing Powershell maintenance scripts to add functionality to a set of VMs&lt;/li&gt;
+&lt;li&gt;Writing .NET (C#) programs to automate the generation of nightly reports on servers&lt;/li&gt;
+&lt;li&gt;Development of programs to perform database updates based on server statuses&lt;/li&gt;
+&lt;li&gt;Creating a dashboard reporting widget to get a snapshot of a server&amp;rsquo;s status&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;My biggest task over the summer was to fix the current backup-server reports. At the time I started working, the only way to view status of backup servers and disaster recovery servers was to look through a giant list of all servers. This page had an undefined color scheme, and would report servers as being down when they weren&amp;rsquo;t, show servers that didn&amp;rsquo;t even exist, and a whole host of other issues. I wrote a reporting utility in JavaScript (using a library Flot.js) that pulled in accurate data, and displayed it in an interactive manner. Server performance was charted over time, and users could select which servers or types of servers they were interested in, and show the lifetime summary or drill down to specific times. This greatly helped employees analyze when servers began running into issues and how to prevent future issues.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LinguiSystems, Inc. Web Developer</title>
+      <link>https://jstimes.github.io/work-experience/linguisystems/</link>
+      <pubDate>Thu, 15 Aug 2013 19:17:43 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/work-experience/linguisystems/</guid>
+      <description>&lt;p&gt;This was my very first job doing programming. I worked here the summer before going to Iowa State, and it gave me a significant advantage in my classes.&lt;/p&gt;
+
+&lt;p&gt;I worked as a web developer for a company that provides learning materials for Speech-language pathologists and those with special needs. My main project consisted of generating a whole host of internal reports in PHP and SQL so employees could search for specific sales or inventory information.&lt;/p&gt;
+
+&lt;p&gt;Another significant part of my summer was developing a portion of their website that allowed customers to track their packages with ease by utilizing the UPS API.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

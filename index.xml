@@ -6,45 +6,119 @@
     <description>Recent content on My Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Sep 2016 20:45:24 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 19 Sep 2016 19:17:03 -0500</lastBuildDate>
     <atom:link href="https://jstimes.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>PriceFinder</title>
-      <link>https://jstimes.github.io/sideprojs/PriceFinder/</link>
-      <pubDate>Thu, 15 Sep 2016 20:45:24 -0500</pubDate>
+      <title>Research Assistant - Robotics Lab</title>
+      <link>https://jstimes.github.io/work-experience/ra/</link>
+      <pubDate>Mon, 19 Sep 2016 19:17:03 -0500</pubDate>
       
-      <guid>https://jstimes.github.io/sideprojs/PriceFinder/</guid>
-      <description>&lt;p&gt;Here are some details on one of my side projects, &lt;a href=&#39;http://github.com/jstimes/PriceFinder.git&#39;&gt;PriceFinder&lt;/a&gt;&lt;/p&gt;
+      <guid>https://jstimes.github.io/work-experience/ra/</guid>
+      <description>&lt;p&gt;In Fall 2015, I began working as an undergraduate research assistant for Dr. Yan-bin Jia in his robotics lab. One of his PhD. students, Feifei Wang has published work on analyzing the impact of 3D rigid objects. Given their pre-impact velocities, orientations, and other physical parameters, her work is able to analyze how long the objects will stick or slide against each other, and computes the post-impact velocities and orientations. My project has been to create a graphical interface for others to experiment with her work.&lt;/p&gt;
+
+&lt;p&gt;Over the past year, I have developed a C++/OpenGL interface where users can select from a variety of objects, position them in space, and give them initial velocities. Upon clicking &amp;lsquo;Run&amp;rsquo;, the objects begin moving. I developed a collision detection algorithm for &lt;a href=&#39;https://en.wikipedia.org/wiki/Superquadrics&#39;&gt;Superquadric&lt;/a&gt; objects, and when it detects objects have collided, it runs Feifei&amp;rsquo;s code to simulate the impact, and then continues the animation base on the post-impact results.&lt;/p&gt;
+
+&lt;p&gt;I also developed a program to compute the angular inertia and principal frame of tetrahedral meshes, properties of objects that are necessary in order to analyze their impacts and motion. A tetrahedral mesh is a collection of small tetrahedra that together for more complex shapes, for example a bowling pin, a person, and other objects that can&amp;rsquo;t be mathematically modeled.&lt;/p&gt;
+
+&lt;p&gt;The collsion detection scheme has been the most challenging aspect of the project. Essentially we constructed a system of 4 equations in 4 variables for 2 superquadrics. The solution to this system gives the closest points between the two shapes, and can be used for detecting collision. I used Newton&amp;rsquo;s method for approximating systems to solve the equations efficiently, given a close initial estimate. Unfortunately, several superquadrics have edges and points where derivatives are not defined, and I thus had to develop a routine that detected if Newton&amp;rsquo;s method was converging to one of those unsatisfactory points, and either correct it or scan along the edge in a brute force manner to get the closest point.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m currently working on porting the application to the web. I&amp;rsquo;ve been trying to use a tool &lt;a href=&#39;https://kripken.github.io/emscripten-site/index.html&#39;&gt;Emscripten&lt;/a&gt; to cross compile the C++ into efficient JavaScript assembly and WebGL. Most of it has converted just fine, but I&amp;rsquo;m still working on getting certain functionality to work correctly.&lt;/p&gt;
+
+&lt;p&gt;After the web version is published, I will begin an independent research project and help some of the PhD students with their work as well. I also aim to develop a tetrahedral mesh collision detection algorithm so many more shapes can be used in the impact interface.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Cumulative Reflections</title>
-      <link>https://jstimes.github.io/about/cumulativereflections/</link>
-      <pubDate>Thu, 15 Sep 2016 20:39:58 -0500</pubDate>
+      <title>About Me</title>
+      <link>https://jstimes.github.io/aboutme/</link>
+      <pubDate>Fri, 16 Sep 2016 19:50:40 -0500</pubDate>
       
-      <guid>https://jstimes.github.io/about/cumulativereflections/</guid>
-      <description>&lt;p&gt;This is where my cumulative reflections will go.&lt;/p&gt;
+      <guid>https://jstimes.github.io/aboutme/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;This is an in-progess portfolio&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Hello, my name is Jacob Stimes and thank you for visiting my portfolio. You can contact me at jacob.stimes@gmail.com, and view my public work at &lt;a href=&#39;https://github.com/jstimes&#39;&gt;github.com/jstimes&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m currently a senior at Iowa State University studying software engineering. My main software interests are mobile development (Android and iOS) and graphics (OpenGL). When I&amp;rsquo;m not sitting in front of a computer, I try to stay active &amp;ndash; I enjoy playing just about any sport, with my favorites being tennis, golf, and racquetball.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve had various work experiences and internships over my college career. The type of work has ranged from writing code for automatic virtual server deployment, to developing a mobile voice assistant, to teaching students about data structures. I love to learn new technologies and look forward to a career in the field of technology. My ultimate goal is to join a tech company where I can help push forward the boundaries of what is possible with technology.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Sr. Design Project Details</title>
-      <link>https://jstimes.github.io/srdesign/details/</link>
+      <link>https://jstimes.github.io/school-projects/details/</link>
       <pubDate>Thu, 15 Sep 2016 20:39:15 -0500</pubDate>
       
-      <guid>https://jstimes.github.io/srdesign/details/</guid>
-      <description>&lt;p&gt;I will put details on my Sr. Design project here as it is developed.&lt;/p&gt;
+      <guid>https://jstimes.github.io/school-projects/details/</guid>
+      <description>&lt;p&gt;Senior Design is a year long course that all software, computer, and electrical engineers must take. My team consists of 6 software engineers. We have a project advisor who is a professor at Iowa State studying the therapeutic benefits that gardening can have on female inmates across Iowa. Her and her team have developed training materials and guides for the inmates so they can learn about all aspects of the garden lifecycle (planting, nurturing, harvest, post-harvest, etc.).&lt;/p&gt;
+
+&lt;p&gt;Our team is tasked with developing an Android application so inmates can take the learning materials into the garden with them, and have instant access to the information they need. Additionally, it will provide them with ways to analyze their progress. Ideally they could take pictures of plants that aren&amp;rsquo;t looking healthy, and they will be sent to our advisor so she can help identify problems.&lt;/p&gt;
+
+&lt;p&gt;Another big aspect of this project is the security. Iowa has some progressive prison systems that are willing to allow inmates access to tablets, but their usage must be very restrictive. For this reason, we will most likely modify the Android operating system to restrict a lot of functionality. This presents our team with an interesting challenge, as we must restrict Wifi access, but still allow data to be sent back to our advisor when the tablets are docked.&lt;/p&gt;
+
+&lt;p&gt;This page will be updated as the project progresses.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>WhackyBalls</title>
+      <link>https://jstimes.github.io/side-projects/WhackyBalls/</link>
+      <pubDate>Mon, 05 Sep 2016 20:45:24 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/side-projects/WhackyBalls/</guid>
+      <description>&lt;p&gt;&lt;a href=&#39;http://github.com/jstimes/WhackyBalls.git&#39;&gt;WhackyBalls&lt;/a&gt; is an Android game where users rotate their device to roll a ball along different directions on a platform. The goal is to knock other balls off while keeping your ball on the platform.&lt;/p&gt;
+
+&lt;p&gt;Currently the game is just a prototype. There are AI balls that use some simple path planning to attempt to knock the user&amp;rsquo;s ball off. When the user falls off, his ball drops back on the platform, but the AI balls are gone for good. In the future I hope to make some more sophisticated AI, more eye-catching backgrounds/colors, and a networking component where users can play against friends in real-time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cumulative Reflections</title>
+      <link>https://jstimes.github.io/reflections/cumulativereflections/</link>
+      <pubDate>Thu, 01 Sep 2016 20:39:58 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/reflections/cumulativereflections/</guid>
+      <description>&lt;p&gt;At some point I will discuss my reflections regarding my cumulative college education experiences here&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My General Education Reflections</title>
+      <link>https://jstimes.github.io/reflections/gened/</link>
+      <pubDate>Thu, 01 Sep 2016 19:50:48 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/reflections/gened/</guid>
+      <description>&lt;p&gt;In the future, this will contain my reflections on my general education electives and how they&amp;rsquo;ve helped my professional career&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Epic Intern 2016</title>
+      <link>https://jstimes.github.io/work-experience/epic2016/</link>
+      <pubDate>Wed, 17 Aug 2016 19:17:11 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/work-experience/epic2016/</guid>
+      <description>&lt;p&gt;Epic is an electronic healthcare provider. One of their main focuses is patient engagement, as many patients feel they know too little about their healthcare or have little control over it. MyChart is Epic&amp;rsquo;s app (web and mobile) that allows patients to log in and view their health information, schedule appointments, send messages to their providers, and more. In Summer 2016 I worked on the MyChart Mobile team and was tasked with providing an alternate way of navigating the app - specifically via voice.&lt;/p&gt;
+
+&lt;p&gt;The project definition was intentionally vague; it was something along the lines of &amp;lsquo;Build a voice assistant for MyChart, something similar to Siri.&amp;rsquo; The initial part of my summer was spent understanding how users use the app, what issues they have, and how other voice assistants are developed and used. I also spent some time researching NLP and machine learning techniques to get a sense of how to interpret user commands.&lt;/p&gt;
+
+&lt;p&gt;I was able to quickly get a prototype of my voice assistant incorporated into the MyChart iOS app. Fortunately, iOS 10 beta came out just in time and provided me with an easy to use speech recognition API. For the text processing, I used a hand-crafted decision tree. The way it works was that it would first try to determine if the command was related to appointments. If so, it would go on to check if the user said something related to scheduling, or viewing, or cancelling. If there were no words pertaining to appointments, it would go on to check if the user was talking about messages, and then check for more specifics if so, and so on. This approach was naive but very effective since there is a limited amount of activities the user can perform with the app, so it was easy to associate a set of keywords with each action. Additionally, I created some text processing utilities to extract time information (e.g. next appointment vs. previous appointment) and person information (deduce that the user was referrring to a specific provider or another patient with their command).&lt;/p&gt;
+
+&lt;p&gt;After getting the processing done, it was relatively simple to navigate the user to the corresponding page or action they requested. Whenever there was not enough information or something was ambiguous, the assistant would prompt for more information. This consisted of reading through the existing code to learn how the app was navigated, and what parameters were required for the various actions.&lt;/p&gt;
+
+&lt;p&gt;The final phase of my project involved developing an intuitive, eye-catching user experience. Ultimately, the voice assistant view controller resembled Siri in many ways. The voice assistant&amp;rsquo;s prompts appeared from the left side of the screen, and the user&amp;rsquo;s responses appeared on the right, similar to how a text messaging app looks. The user could scroll through the conversation if there were more prompts than could fit in the screen. The voice recognition automatically started listening after the assistant makes a prompt, and automatically stops when it detects the user stopped speaking. When a user is prompted to choose an option from a limited set of responses, those options are presented to them as sliding in from the top. This is extremely helpful for when they are prompted for a person&amp;rsquo;s name, as many names are hard to detect by the speech recogntion, so they could simply tap an option to continue.&lt;/p&gt;
+
+&lt;p&gt;All in all, this was one of my favorite projects I&amp;rsquo;ve ever worked on. It was quite an exciting project to show off, and I even was fortunate enough to demo it to one of Epic&amp;rsquo;s customers. Additionally, this project was an incredible learning experience for me. I learned Objective-C as the summer went on, and became very fluent in iOS development. Although I didn&amp;rsquo;t get to do very much machine learning, it was fascinating to look into and I&amp;rsquo;m eager to learn more about it in the future.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Resume</title>
-      <link>https://jstimes.github.io/about/resume/</link>
-      <pubDate>Thu, 15 Sep 2016 19:53:07 -0500</pubDate>
+      <link>https://jstimes.github.io/resume/</link>
+      <pubDate>Mon, 15 Aug 2016 19:53:07 -0500</pubDate>
       
-      <guid>https://jstimes.github.io/about/resume/</guid>
+      <guid>https://jstimes.github.io/resume/</guid>
       <description>&lt;p&gt;&lt;html&gt;
 &lt;head&gt;
 &lt;style&gt;
@@ -104,7 +178,8 @@ ul {
 
 &lt;p&gt;&lt;/style&gt;
 &lt;/head&gt;
-&lt;body style=&#39;margin-right: 10px;&#39;&gt; &lt;!--width=&#39;2550px&#39; height=&#39;3300px&#39;--&gt;&lt;/p&gt;
+&lt;body style=&#39;margin-right: 10px;&#39;&gt; &lt;!--width=&#39;2550px&#39; height=&#39;3300px&#39;--&gt;
+I use html to build my resume as I find that gives me much more control over the formatting and I don&amp;rsquo;t have to fight with Microsoft Word to align things. I simply pasted the content below, I apologize if the formatting is off. Contact me if you would like a PDF version.&lt;/p&gt;
 
 &lt;!-- HEADER--&gt;
 
@@ -275,120 +350,105 @@ ul {
     </item>
     
     <item>
-      <title>My General Education Reflections</title>
-      <link>https://jstimes.github.io/about/gened/</link>
-      <pubDate>Thu, 15 Sep 2016 19:50:48 -0500</pubDate>
+      <title>PriceFinder</title>
+      <link>https://jstimes.github.io/side-projects/PriceFinder/</link>
+      <pubDate>Mon, 08 Aug 2016 20:45:24 -0500</pubDate>
       
-      <guid>https://jstimes.github.io/about/gened/</guid>
-      <description>&lt;p&gt;TODO&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://jstimes.github.io/about/aboutme/</link>
-      <pubDate>Thu, 15 Sep 2016 19:50:40 -0500</pubDate>
-      
-      <guid>https://jstimes.github.io/about/aboutme/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;This is an in-progess portfolio&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+      <guid>https://jstimes.github.io/side-projects/PriceFinder/</guid>
+      <description>&lt;p&gt;&lt;a href=&#39;http://github.com/jstimes/PriceFinder.git&#39;&gt;PriceFinder&lt;/a&gt; is a project I started working on in Spring 2016, and stopped working on in August 2016. The main idea of the app is to let users search for products they are interested in. Results are pulled in from a variety of sites using their API (Amazon, Best Buy, Walmart, etc.). With these results, users select the ones they would consider purchasing (e.g. maybe the user doesn&amp;rsquo;t want to buy from eBay), and give a target prices they would like to buy at. Those items are saved, and re-searched for on a daily basis to see if any of their prices have fallen below the target price. This allows them to only use the app when they have a new product they desire, and be notified when it is affordable for them.&lt;/p&gt;
 
-&lt;p&gt;Hello, my name is Jacob Stimes and thank you for visiting my portfolio. You can contact me at jacob.stimes@gmail.com&lt;/p&gt;
+&lt;p&gt;Users can browse through their saved searches, and update the target price, or delete specific items. Additionally, each individual item has a link to its site so the user can buy it directly without having to back out of the app, open a browser, and search for it again. There was a recommended tab where I hoped to provide suggestions based on similar users, but have not implemented it as I ended up not using a server to store data and instead use the device&amp;rsquo;s local storage.&lt;/p&gt;
 
-&lt;p&gt;Now I will discuss my personal and professional background, goals, career objectives, and that fun stuff&amp;hellip;&lt;/p&gt;
+&lt;p&gt;The Android version is functional, but has a lot of UI work still to be done. As I was wrapping up the iOS component, one of the last things I was doing was incorporating the Amazon API (one of the best online vendors and has support for retrieving recommended items). I discovered that their terms of service agreement does not allow any mobile app to display their Product Advertising content without written consent. Upon discovering that, I looked into the other API terms&amp;rsquo; of service I was using and they have some disappointing requirements as well. Until I find a workaround/get written consent from Amazon, this project is being put on hold.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wumpus World</title>
+      <link>https://jstimes.github.io/school-projects/WumpusWorld/</link>
+      <pubDate>Wed, 27 Apr 2016 19:19:33 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/school-projects/WumpusWorld/</guid>
+      <description>&lt;p&gt;A SE 329 group project. A graphics-based game developed using Java/OpenGL to demonstrate the Wumpus World game, a popular game to study in AI courses. A description of the game can be found &lt;a href=&#39;http://cis-linux1.temple.edu/~giorgio/cis587/readings/wumpus.shtml&#39;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;This is an in-progess portfolio&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>DnaSequenceAlignment</title>
-      <link>https://jstimes.github.io/projects/DnaSequenceAlignment/</link>
-      <pubDate>Thu, 15 Sep 2016 19:20:15 -0500</pubDate>
-      
-      <guid>https://jstimes.github.io/projects/DnaSequenceAlignment/</guid>
-      <description>&lt;p&gt;A C++ program developed in Com S 229 (advanced programming techniques) for determing the optimal alignment for various DNA sequences by utilizing dynamic programming.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>PencilMotion</title>
-      <link>https://jstimes.github.io/projects/PencilMotion/</link>
-      <pubDate>Thu, 15 Sep 2016 19:19:57 -0500</pubDate>
-      
-      <guid>https://jstimes.github.io/projects/PencilMotion/</guid>
-      <description>&lt;p&gt;A C++/OpenGL graphical application that calculates and renders the motion of a pencil tumbling through the air, and bouncing off a surface.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>WumpusWorld</title>
-      <link>https://jstimes.github.io/projects/WumpusWorld/</link>
-      <pubDate>Thu, 15 Sep 2016 19:19:33 -0500</pubDate>
-      
-      <guid>https://jstimes.github.io/projects/WumpusWorld/</guid>
-      <description>&lt;p&gt;A SE 329 group project. A graphics-based game built in Java/OpenGL to demonstrate the Wumpus World game, a popular game to study in AI courses. Phase 2 of the project consisted of a networking component to play against friends, and AI components so users could challenge an AI player.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#39;https://github.com/ObiJuanKenobi/WumpusWorld&#39;&gt;View source&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The first phase of the project consisted of developing the graphical interface and connecting it with the game logic so a user could play a single round of the Wumpus game. I worked on implementing the OpenGL graphics code and connecting the user&amp;rsquo;s interactions with the game logic.&lt;/p&gt;
+
+&lt;p&gt;The second phase of the project consisted of a networking component to play against friends, as well as AI components so users could challenge an AI player. When playing the game over a network, users could challenge friends to see who could complete the game with the fewest number of moves (or complete it at all). The AI modes allowed users to challenge and AI oppenent in 3 different difficuly levels. I personally worked on the AI component for this phase. The easy difficulty AI essentially moved in breadth-first manner, ignoring the statistical dangers of various squares. The medium difficulty always chose the safest path, but backtracked so it would take more moves. The hard difficulty additionaly chose the safest path, but moved in a depth-first manner so there was little backtracking and it could reach the gold quickly.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>WikiClicki</title>
-      <link>https://jstimes.github.io/projects/WikiClicki/</link>
-      <pubDate>Thu, 15 Sep 2016 19:19:20 -0500</pubDate>
+      <link>https://jstimes.github.io/school-projects/WikiClicki/</link>
+      <pubDate>Tue, 22 Mar 2016 19:19:20 -0500</pubDate>
       
-      <guid>https://jstimes.github.io/projects/WikiClicki/</guid>
+      <guid>https://jstimes.github.io/school-projects/WikiClicki/</guid>
       <description>&lt;p&gt;A SE329 (project management) group project in which we developed a web-based game made in JavaScript and HTML, utilizing D3 graphing utilities.&lt;/p&gt;
+
+&lt;p&gt;The wiki-game is where a person starts at a random page on Wikipedia, and tries to get to another game in a certain amount of clicks. My team developed a web application to play this game in a more streamlined fashion. Users could choose a destination page or have one chosen at random. After clicking start, the app chose a random page for them to start on. Using D3, we showed their current page as a center node, with links to outer nodes for all links on the wikipedia page. In the sidebar, information on the page is shown so users can learn as they explore the depths of wikipedia. Upon clicking an outer node, the center node would be replaced, the current page information would be replaced, and the links on the new page were shown graphically as outer nodes.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>OrangesToOranges</title>
-      <link>https://jstimes.github.io/projects/OrangesToOranges/</link>
-      <pubDate>Thu, 15 Sep 2016 19:18:49 -0500</pubDate>
+      <title>Assembly</title>
+      <link>https://jstimes.github.io/side-projects/Assembly/</link>
+      <pubDate>Sun, 21 Feb 2016 20:45:24 -0500</pubDate>
       
-      <guid>https://jstimes.github.io/projects/OrangesToOranges/</guid>
-      <description>&lt;p&gt;A semester long group project, in which we developed an Android game based off of the popular card game Apples-to-Apples. Users could start games to play with other friends who also had the app, and create/use custom made cards and decks.&lt;/p&gt;
+      <guid>https://jstimes.github.io/side-projects/Assembly/</guid>
+      <description>&lt;p&gt;This was a hackathon project that a team of 4 of us completed last spring. Our hackathon submission containing all the project details and some screenshots can be found &lt;a href=&#39;http://devpost.com/software/assembly-e105md&#39;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I personally worked on the AngularJS client side of the project, and helped with design and styling. It was a fun experience as none of our team members had any prior experience with Angular, yet after 36 hours and way too much caffeine, we had completed a fully functional, professional looking web application.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>FaceMapper</title>
-      <link>https://jstimes.github.io/projects/FaceMapper/</link>
-      <pubDate>Thu, 15 Sep 2016 19:18:37 -0500</pubDate>
+      <link>https://jstimes.github.io/school-projects/FaceMapper/</link>
+      <pubDate>Mon, 01 Feb 2016 19:18:37 -0500</pubDate>
       
-      <guid>https://jstimes.github.io/projects/FaceMapper/</guid>
-      <description>&lt;p&gt;SE 329 group project.&lt;/p&gt;
+      <guid>https://jstimes.github.io/school-projects/FaceMapper/</guid>
+      <description>&lt;p&gt;SE 329 (project management) group project (~3 weeks).&lt;/p&gt;
 
 &lt;p&gt;The goal was to develop an application to automate attendance taking in classrooms. After being fed training images for the faces of students in a class, it attempts to identify those individuals in class photos and take attendance accordingly.
 &lt;a href=&#39;https://github.com/jstimes/FaceMapper&#39;&gt;View Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The project used Java Swing for the user interface, and python and OpenCV for the facial recognition. Additionally, it used a very simple JSON schema for storing attendance data. I personally worked on the python training and recognition, as well as the database for saving images and information.&lt;/p&gt;
+
+&lt;p&gt;The program had decent success. It recognizes faces well, but can&amp;rsquo;t always match the face to a name. We believe that this was due to a lack of sufficient training data for each face. As with most machine learning algorithms, the more training data supplied, the more accurate the results.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>LinguiSystems, Inc. Web Developer</title>
-      <link>https://jstimes.github.io/workexp/linguisystems/</link>
-      <pubDate>Thu, 15 Sep 2016 19:17:43 -0500</pubDate>
+      <title>Pencil Motion</title>
+      <link>https://jstimes.github.io/school-projects/PencilMotion/</link>
+      <pubDate>Sat, 03 Oct 2015 19:19:57 -0500</pubDate>
       
-      <guid>https://jstimes.github.io/workexp/linguisystems/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Teaching Assistant - Data Structures</title>
-      <link>https://jstimes.github.io/workexp/ta/</link>
-      <pubDate>Thu, 15 Sep 2016 19:17:31 -0500</pubDate>
-      
-      <guid>https://jstimes.github.io/workexp/ta/</guid>
-      <description>&lt;p&gt;Details about my teaching assistantship for Com S 228 Intro. to Data Structures and Algorithms.&lt;/p&gt;
+      <guid>https://jstimes.github.io/school-projects/PencilMotion/</guid>
+      <description>&lt;p&gt;A C++/OpenGL graphical application that calculates and renders the motion of a pencil tumbling through the air, and bouncing off a surface. This project was for Com S 477 &amp;ndash; Applied Problem Solving Techniques for Computer Science.&lt;/p&gt;
+
+&lt;p&gt;The class project was just to determine the position and velocity of a pencil tumbling through the air given the pre and post impact velocities and orientations when it hits a surface, with an emphasis on using quaternions to model its rotation. I used OpenGL to render its motion as it tumbles through the air and hits the surface.&lt;/p&gt;
+
+&lt;p&gt;This is again a class-wide project, so I can not host the code on my github.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Principal Financial Group 2014</title>
-      <link>https://jstimes.github.io/workexp/pf2014/</link>
-      <pubDate>Thu, 15 Sep 2016 19:17:23 -0500</pubDate>
+      <title>Epic Intern 2015</title>
+      <link>https://jstimes.github.io/work-experience/epic2015/</link>
+      <pubDate>Mon, 17 Aug 2015 19:17:15 -0500</pubDate>
       
-      <guid>https://jstimes.github.io/workexp/pf2014/</guid>
-      <description>&lt;p&gt;Details about my internship with Principal Financial Group in summer 2014.&lt;/p&gt;
+      <guid>https://jstimes.github.io/work-experience/epic2015/</guid>
+      <description>&lt;p&gt;In summer 2015, I interned with Epic and was placed on a project with 2 other interns. Some of Epic&amp;rsquo;s competitors had begun using real-time tracking systems in their customer&amp;rsquo;s hospitals and clinics. My team and I were tasked with protyping a similar system for Epic.&lt;/p&gt;
+
+&lt;p&gt;Epic targets the largest healthcare organizations, and so it is not uncommon for patients to get lost and inefficiencies to occur in the organization&amp;rsquo;s operations. To address these problems, we took an existing hospital mapping application, and modified it to be able to update in real-time. At the time, we made the assumption that the customer would choose a tracking system (such as iBeacons), and focused on how to transmit that data, display it, and run analytics on it.&lt;/p&gt;
+
+&lt;p&gt;I personally worked on the real-time data transfer. I did this using SignalR, a networking framework created by Microsoft that first tries to use web-sockets, and falls back to long-polling and other methods based on what is currently available.&lt;/p&gt;
+
+&lt;p&gt;After accomplishing that, I began developing a simulator to generate some data for our team to work with (none of our customers had a system like this yet so there was no pre-existing data). The simulator consisted of an HTML/JavaScript frontend where users could specify a whole host of parameters to be used in the simulation. These included: number of doctors, number of nurses, min/max waiting times, min/max examination times, number of exam rooms, procedure rooms, and many more. Upon clicking run, these parameters were sent to a multi-threaded Cache program I developed that ran the simulation, and stored the data in our system. The other members of my team could then use this data to examine their analytics results. Although this was primarily for generating test data, it could also be used by clinic adminstrators to test how their organization may operate in various conditions.&lt;/p&gt;
+
+&lt;p&gt;Over the summer I learned some new technologies (SignalR and Cache), and became all to familiar with how NOT to write multi-threaded code :) In summary, it was a very fun project, and a great learning experience for me.&lt;/p&gt;
 </description>
     </item>
     

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reflections on My Portfolio</title>
+    <link>https://jstimes.github.io/reflections/</link>
+    <description>Recent content in Reflections on My Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Sep 2016 20:39:58 -0500</lastBuildDate>
+    <atom:link href="https://jstimes.github.io/reflections/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Cumulative Reflections</title>
+      <link>https://jstimes.github.io/reflections/cumulativereflections/</link>
+      <pubDate>Thu, 01 Sep 2016 20:39:58 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/reflections/cumulativereflections/</guid>
+      <description>&lt;p&gt;At some point I will discuss my reflections regarding my cumulative college education experiences here&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My General Education Reflections</title>
+      <link>https://jstimes.github.io/reflections/gened/</link>
+      <pubDate>Thu, 01 Sep 2016 19:50:48 -0500</pubDate>
+      
+      <guid>https://jstimes.github.io/reflections/gened/</guid>
+      <description>&lt;p&gt;In the future, this will contain my reflections on my general education electives and how they&amp;rsquo;ve helped my professional career&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
