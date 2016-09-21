@@ -53,7 +53,7 @@
     },
     "datePublished": "2016-08-17",
     "description": "Developed a smart voice assistant for Epic\x27s patient portal",
-    "wordCount":  648 
+    "wordCount":  678 
   }
 </script>
 
@@ -169,7 +169,7 @@
 
   
   &middot; Read in about 4 min
-  &middot; (648 Words)
+  &middot; (678 Words)
   <br>
   
 
@@ -183,13 +183,13 @@
 
 <p>The project definition was intentionally vague; it was something along the lines of &lsquo;Build a voice assistant for MyChart, something similar to Siri.&rsquo; The initial part of my summer was spent understanding how users use the app, what issues they have, and how other voice assistants are developed and used. I also spent some time researching NLP and machine learning techniques to get a sense of how to interpret user commands.</p>
 
-<p>I was able to quickly get a prototype of my voice assistant incorporated into the MyChart iOS app. Fortunately, iOS 10 beta came out just in time and provided me with an easy to use speech recognition API. For the text processing, I used a hand-crafted decision tree. The way it works was that it would first try to determine if the command was related to appointments. If so, it would go on to check if the user said something related to scheduling, or viewing, or cancelling. If there were no words pertaining to appointments, it would go on to check if the user was talking about messages, and then check for more specifics if so, and so on. This approach was naive but very effective since there is a limited amount of activities the user can perform with the app, so it was easy to associate a set of keywords with each action. Additionally, I created some text processing utilities to extract time information (e.g. next appointment vs. previous appointment) and person information (deduce that the user was referrring to a specific provider or another patient with their command).</p>
+<p>I was able to quickly get a prototype of my voice assistant incorporated into the MyChart iOS app. Fortunately, iOS 10 beta came out just in time and provided me with an easy to use speech recognition API. For the text processing, I used a hand-crafted decision tree. The way it works was that it would first try to determine if the command was related to appointments. If so, it would go on to check if the user said something related to scheduling, or viewing, or cancelling. If there were no words pertaining to appointments, it would go on to check if the user was talking about messages, and then check for more specifics if so, and so on. This approach was naive but very effective since there is a limited amount of activities the user can perform with the app. Thus, it was easy to associate a set of keywords with each action. Additionally, I created some text processing utilities to extract time information (e.g. next appointment vs. previous appointment) and identification information (deduce that the user was referrring to a specific provider or another patient with their command).</p>
 
 <p>After getting the processing done, it was relatively simple to navigate the user to the corresponding page or action they requested. Whenever there was not enough information or something was ambiguous, the assistant would prompt for more information. This consisted of reading through the existing code to learn how the app was navigated, and what parameters were required for the various actions.</p>
 
-<p>The final phase of my project involved developing an intuitive, eye-catching user experience. Ultimately, the voice assistant view controller resembled Siri in many ways. The voice assistant&rsquo;s prompts appeared from the left side of the screen, and the user&rsquo;s responses appeared on the right, similar to how a text messaging app looks. The user could scroll through the conversation if there were more prompts than could fit in the screen. The voice recognition automatically started listening after the assistant makes a prompt, and automatically stops when it detects the user stopped speaking. When a user is prompted to choose an option from a limited set of responses, those options are presented to them as sliding in from the top. This is extremely helpful for when they are prompted for a person&rsquo;s name, as many names are hard to detect by the speech recogntion, so they could simply tap an option to continue.</p>
+<p>The final phase of my project involved developing an intuitive, eye-catching user experience. Ultimately, the voice assistant view controller resembled Siri in many ways. The voice assistant&rsquo;s prompts appeared from the left side of the screen, and the user&rsquo;s responses appeared on the right, similar to how a text messaging app looks. The user could scroll through the conversation if there were more prompts than could fit in the screen. The voice recognition automatically started listening after the assistant makes a prompt, and automatically stops when it detects the user stopped speaking. Additionally, it used an animation I developed to signal to the user that it was picking up their voice, and displayed the interpreted words as the user spoke. When a user is prompted to choose an option from a limited set of responses, those options are presented to them as sliding in from the top. This is extremely helpful for when they are prompted for a person&rsquo;s name or medication, as many names are hard to detect by the speech recogntion, so they could simply tap an option to continue.</p>
 
-<p>All in all, this was one of my favorite projects I&rsquo;ve ever worked on. It was quite an exciting project to show off, and I even was fortunate enough to demo it to one of Epic&rsquo;s customers. Additionally, this project was an incredible learning experience for me. I learned Objective-C as the summer went on, and became very fluent in iOS development. Although I didn&rsquo;t get to do very much machine learning, it was fascinating to look into and I&rsquo;m eager to learn more about it in the future.</p>
+<p>All in all, this was one of my favorite projects I&rsquo;ve ever worked on. It was quite an exciting project to show off, and I was even fortunate enough to demo it to one of Epic&rsquo;s customers. Additionally, this project was an incredible learning experience for me. I learned Objective-C as the summer went on, and became very fluent in iOS development. Although I didn&rsquo;t get to do very much machine learning, it was fascinating to look into and I&rsquo;m eager to learn more about it in the future.</p>
 
 </div>
 

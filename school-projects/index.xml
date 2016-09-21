@@ -37,7 +37,7 @@
 
 &lt;p&gt;The first phase of the project consisted of developing the graphical interface and connecting it with the game logic so a user could play a single round of the Wumpus game. I worked on implementing the OpenGL graphics code and connecting the user&amp;rsquo;s interactions with the game logic.&lt;/p&gt;
 
-&lt;p&gt;The second phase of the project consisted of a networking component to play against friends, as well as AI components so users could challenge an AI player. When playing the game over a network, users could challenge friends to see who could complete the game with the fewest number of moves (or complete it at all). The AI modes allowed users to challenge and AI oppenent in 3 different difficuly levels. I personally worked on the AI component for this phase. The easy difficulty AI essentially moved in breadth-first manner, ignoring the statistical dangers of various squares. The medium difficulty always chose the safest path, but backtracked so it would take more moves. The hard difficulty additionaly chose the safest path, but moved in a depth-first manner so there was little backtracking and it could reach the gold quickly.&lt;/p&gt;
+&lt;p&gt;The second phase of the project consisted of a networking component to play against friends, as well as AI components so users could challenge an AI player. When playing the game over a network, users could challenge friends to see who could complete the game with the fewest number of moves (or complete it at all). The AI modes allowed users to challenge an AI oppenent in 3 different difficuly levels. I personally worked on the AI component for this phase. The easy difficulty AI essentially moved in breadth-first manner, ignoring the statistical dangers of various squares. The medium difficulty always chose the safest path, but backtracked so it would take more moves. The hard difficulty additionaly chose the safest path, but moved in a depth-first manner so there was little backtracking and it could reach the gold quickly.&lt;/p&gt;
 </description>
     </item>
     
@@ -66,7 +66,7 @@
 
 &lt;p&gt;The project used Java Swing for the user interface, and python and OpenCV for the facial recognition. Additionally, it used a very simple JSON schema for storing attendance data. I personally worked on the python training and recognition, as well as the database for saving images and information.&lt;/p&gt;
 
-&lt;p&gt;The program had decent success. It recognizes faces well, but can&amp;rsquo;t always match the face to a name. We believe that this was due to a lack of sufficient training data for each face. As with most machine learning algorithms, the more training data supplied, the more accurate the results.&lt;/p&gt;
+&lt;p&gt;The program had decent success. It detects faces well, but can&amp;rsquo;t always match the face to a name. We believe that this was due to a lack of sufficient training data for each face. As with most machine learning algorithms, the more training data supplied, the more accurate the results.&lt;/p&gt;
 </description>
     </item>
     

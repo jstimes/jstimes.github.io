@@ -41,7 +41,7 @@
       <pubDate>Sun, 21 Feb 2016 20:45:24 -0500</pubDate>
       
       <guid>https://jstimes.github.io/side-projects/Assembly/</guid>
-      <description>&lt;p&gt;This was a hackathon project that a team of 4 of us completed last spring. Our hackathon submission containing all the project details and some screenshots can be found &lt;a href=&#39;http://devpost.com/software/assembly-e105md&#39;&gt;here&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;This was a hackathon project that a team of 4 of us completed in Spring 2016. Our hackathon submission containing all the project details and some screenshots can be found &lt;a href=&#39;http://devpost.com/software/assembly-e105md&#39;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I personally worked on the AngularJS client side of the project, and helped with design and styling. It was a fun experience as none of our team members had any prior experience with Angular, yet after 36 hours and way too much caffeine, we had completed a fully functional, professional looking web application.&lt;/p&gt;
 </description>
@@ -57,7 +57,7 @@
 
 &lt;p&gt;The player gets three lives, and every time a coin falls out, they lose one. As time progresses, the coins start falling faster and faster. At the end of the game, the user&amp;rsquo;s high score is tracked.&lt;/p&gt;
 
-&lt;p&gt;I developed this game before I learned about OpenGL, and so it&amp;rsquo;s a little hacky but works. Now that I understand OpenGL ES, I&amp;rsquo;d like to someday redo this app properly, giving it some more functionality and some images &amp;amp; icons that aren&amp;rsquo;t atrocious looking.&lt;/p&gt;
+&lt;p&gt;I developed this game before I learned about OpenGL, and so it&amp;rsquo;s a little hacky, but it works. Now that I understand OpenGL ES, I&amp;rsquo;d like to someday redo this app properly, giving it some more functionality and some images &amp;amp; icons that don&amp;rsquo;t look atrocious.&lt;/p&gt;
 </description>
     </item>
     

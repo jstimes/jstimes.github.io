@@ -53,7 +53,7 @@
     },
     "datePublished": "2016-09-19",
     "description": "Undergraduate RA funded by NSF REU",
-    "wordCount":  425 
+    "wordCount":  428 
   }
 </script>
 
@@ -168,8 +168,8 @@
 
 
   
-  &middot; Read in about 2 min
-  &middot; (425 Words)
+  &middot; Read in about 3 min
+  &middot; (428 Words)
   <br>
   
 
@@ -181,13 +181,13 @@
   <div class="container content">
   <p>In Fall 2015, I began working as an undergraduate research assistant for Dr. Yan-bin Jia in his robotics lab. One of his PhD. students, Feifei Wang has published work on analyzing the impact of 3D rigid objects. Given their pre-impact velocities, orientations, and other physical parameters, her work is able to analyze how long the objects will stick or slide against each other, and computes the post-impact velocities and orientations. My project has been to create a graphical interface for others to experiment with her work.</p>
 
-<p>Over the past year, I have developed a C++/OpenGL interface where users can select from a variety of objects, position them in space, and give them initial velocities. Upon clicking &lsquo;Run&rsquo;, the objects begin moving. I developed a collision detection algorithm for <a href='https://en.wikipedia.org/wiki/Superquadrics'>Superquadric</a> objects, and when it detects objects have collided, it runs Feifei&rsquo;s code to simulate the impact, and then continues the animation base on the post-impact results.</p>
+<p>Over the past year, I have developed a C++/OpenGL interface where users can select from a variety of objects, position them in space, and give them initial velocities. Upon clicking &lsquo;Run&rsquo;, the objects begin moving. I developed a collision detection algorithm for <a href='https://en.wikipedia.org/wiki/Superquadrics'>Superquadric</a> objects, and when it detects objects have collided, it runs Feifei&rsquo;s code to simulate the impact, and then continues the animation based on the post-impact results.</p>
 
-<p>I also developed a program to compute the angular inertia and principal frame of tetrahedral meshes, properties of objects that are necessary in order to analyze their impacts and motion. A tetrahedral mesh is a collection of small tetrahedra that together for more complex shapes, for example a bowling pin, a person, and other objects that can&rsquo;t be mathematically modeled.</p>
+<p>I also developed a program to compute the angular inertia and principal frame of tetrahedral meshes, properties of objects that are necessary in order to analyze their impacts and motion. A tetrahedral mesh is a collection of small tetrahedra that together form more complex shapes, for example a bowling pin, a person, and other objects that can&rsquo;t be mathematically modeled.</p>
 
-<p>The collsion detection scheme has been the most challenging aspect of the project. Essentially we constructed a system of 4 equations in 4 variables for 2 superquadrics. The solution to this system gives the closest points between the two shapes, and can be used for detecting collision. I used Newton&rsquo;s method for approximating systems to solve the equations efficiently, given a close initial estimate. Unfortunately, several superquadrics have edges and points where derivatives are not defined, and I thus had to develop a routine that detected if Newton&rsquo;s method was converging to one of those unsatisfactory points, and either correct it or scan along the edge in a brute force manner to get the closest point.</p>
+<p>The collsion detection scheme has been the most challenging aspect of the project. Essentially we constructed a system of 4 equations in 4 variables for 2 superquadrics. The solution to this system gives the closest points between the two shapes, and can be used for detecting collision. I used Newton&rsquo;s method for systems of equations to solve for the closest points efficiently, given a close initial estimate. Unfortunately, several superquadrics have edges and points where derivatives are not defined, and I thus had to develop a routine that detected if Newton&rsquo;s method was converging to one of those unsatisfactory points, and either correct it or scan along the edge in a brute force manner to get the closest point.</p>
 
-<p>I&rsquo;m currently working on porting the application to the web. I&rsquo;ve been trying to use a tool <a href='https://kripken.github.io/emscripten-site/index.html'>Emscripten</a> to cross compile the C++ into efficient JavaScript assembly and WebGL. Most of it has converted just fine, but I&rsquo;m still working on getting certain functionality to work correctly.</p>
+<p>I&rsquo;m currently working on porting the application to the web. I&rsquo;ve been trying to use a tool <a href='https://kripken.github.io/emscripten-site/index.html'>Emscripten</a> to cross compile the C++ into efficient JavaScript assembly and WebGL. Most of it has converted just fine, but I&rsquo;m still working on getting certain functionality to work properly.</p>
 
 <p>After the web version is published, I will begin an independent research project and help some of the PhD students with their work as well. I also aim to develop a tetrahedral mesh collision detection algorithm so many more shapes can be used in the impact interface.</p>
 

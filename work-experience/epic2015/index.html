@@ -53,7 +53,7 @@
     },
     "datePublished": "2015-08-17",
     "description": "Real-time patient \x26 provider tracking system",
-    "wordCount":  349 
+    "wordCount":  394 
   }
 </script>
 
@@ -169,7 +169,7 @@
 
   
   &middot; Read in about 2 min
-  &middot; (349 Words)
+  &middot; (394 Words)
   <br>
   
 
@@ -179,13 +179,13 @@
 </header>
 
   <div class="container content">
-  <p>In summer 2015, I interned with Epic and was placed on a project with 2 other interns. Some of Epic&rsquo;s competitors had begun using real-time tracking systems in their customer&rsquo;s hospitals and clinics. My team and I were tasked with protyping a similar system for Epic.</p>
+  <p>In summer 2015, I interned with Epic and was placed on a project with two other interns. Some of Epic&rsquo;s competitors had begun using real-time tracking systems in their customer&rsquo;s hospitals and clinics. My team and I were tasked with protyping a similar system for Epic.</p>
 
-<p>Epic targets the largest healthcare organizations, and so it is not uncommon for patients to get lost and inefficiencies to occur in the organization&rsquo;s operations. To address these problems, we took an existing hospital mapping application, and modified it to be able to update in real-time. At the time, we made the assumption that the customer would choose a tracking system (such as iBeacons), and focused on how to transmit that data, display it, and run analytics on it.</p>
+<p>Epic targets the largest healthcare organizations, and so it is not uncommon for patients to get lost and inefficiencies to occur in the organization&rsquo;s operations. To address these problems, we took an existing hospital mapping application, and modified it to be able to update in real-time. At the time, we made the assumption that the customer would choose a tracking system (such as iBeacons) to detect where people were at, and focused on how to transmit that data, display it, and run analytics on it.</p>
 
-<p>I personally worked on the real-time data transfer. I did this using SignalR, a networking framework created by Microsoft that first tries to use web-sockets, and falls back to long-polling and other methods based on what is currently available.</p>
+<p>I personally worked on the real-time data transfer. I did this using SignalR, a networking framework created by Microsoft that first tries to use web-sockets, and falls back to long-polling and other methods based on what is currently available. It was quite simple to use, and just required a bit of JavaScript client code in the map application to receive events, and some Cache backend code to store the data and publish events to the client.</p>
 
-<p>After accomplishing that, I began developing a simulator to generate some data for our team to work with (none of our customers had a system like this yet so there was no pre-existing data). The simulator consisted of an HTML/JavaScript frontend where users could specify a whole host of parameters to be used in the simulation. These included: number of doctors, number of nurses, min/max waiting times, min/max examination times, number of exam rooms, procedure rooms, and many more. Upon clicking run, these parameters were sent to a multi-threaded Cache program I developed that ran the simulation, and stored the data in our system. The other members of my team could then use this data to examine their analytics results. Although this was primarily for generating test data, it could also be used by clinic adminstrators to test how their organization may operate in various conditions.</p>
+<p>After accomplishing that, I began developing a simulator to generate some data for our team to work with (none of our customers had a system like this yet so there was no pre-existing data). The simulator consisted of an HTML/JavaScript frontend where users could specify a whole host of parameters to be used in the simulation. These included: number of doctors, number of nurses, min/max waiting times, min/max examination times, number of exam rooms, procedure rooms, and many more. Upon clicking run, these parameters were sent to a multi-threaded Cache program I developed that ran the simulation, and stored the data in our system. My team could then use this data to examine their analytics results and test the real-time data transfer. Although this was primarily for generating test data, it could also be used by clinic adminstrators to test how their organization may operate in various conditions.</p>
 
 <p>Over the summer I learned some new technologies (SignalR and Cache), and became all to familiar with how NOT to write multi-threaded code :) In summary, it was a very fun project, and a great learning experience for me.</p>
 
