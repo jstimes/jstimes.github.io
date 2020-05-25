@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1e9c4cf6.chunk.css",
+    "main.js": "/static/js/main.8869334d.chunk.js",
+    "main.js.map": "/static/js/main.8869334d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2eac5bd3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2eac5bd3.js.map",
+    "static/js/2.a94e2d8e.chunk.js": "/static/js/2.a94e2d8e.chunk.js",
+    "static/js/2.a94e2d8e.chunk.js.map": "/static/js/2.a94e2d8e.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.5838795bd81e41d9f99ee27c3182c5a6.js": "/precache-manifest.5838795bd81e41d9f99ee27c3182c5a6.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.1e9c4cf6.chunk.css.map": "/static/css/main.1e9c4cf6.chunk.css.map",
+    "static/js/2.a94e2d8e.chunk.js.LICENSE.txt": "/static/js/2.a94e2d8e.chunk.js.LICENSE.txt",
+    "static/media/canvas_game_template.gif": "/static/media/canvas_game_template.f08bbc87.gif",
+    "static/media/jacob_x.gif": "/static/media/jacob_x.470e0e6d.gif",
+    "static/media/multi_collide.gif": "/static/media/multi_collide.25be22f0.gif",
+    "static/media/price_finder.gif": "/static/media/price_finder.e38b0b5c.gif",
+    "static/media/radiolo_gl.gif": "/static/media/radiolo_gl.58ba3314.gif",
+    "static/media/snag_the_flag.gif": "/static/media/snag_the_flag.6b4c892f.gif",
+    "static/media/soybean_tagger.gif": "/static/media/soybean_tagger.ba4174b8.gif",
+    "static/media/soybean_tracker.gif": "/static/media/soybean_tracker.5c659a0e.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2eac5bd3.js",
+    "static/js/2.a94e2d8e.chunk.js",
+    "static/css/main.1e9c4cf6.chunk.css",
+    "static/js/main.8869334d.chunk.js"
+  ]
+}
