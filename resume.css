@@ -1,0 +1,138 @@
+/** Prevent purple visited links. */
+a:visited {color:#0000EE;}
+
+.resume {
+    font-family: 'Roboto', sans-serif;
+
+    --name-font-size: 36px;
+    --section-header-font-size: 20px;
+    --school-font-size: 18px;
+    --degree-font-size: 16px;
+    --skills-skill-font-size: 16px;
+    --work-experience-title-font-size: 18px;
+    --work-experience-summary-font-size: 16px;
+    --work-experience-bullet-item-font-size: 15px;
+
+    --section-divider-border: 2px solid #9E9E9E;
+    --section-padding: 8px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--section-divider-border);
+    padding: var(--section-padding);
+}
+
+.name {
+    font-size: var(--name-font-size);
+    font-weight: bold;
+}
+
+.contact-info-item {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-info-item .material-icons {
+    font-size: 14px;
+}
+
+.section-header {
+    font-size: var(--section-header-font-size);
+    margin-bottom: 4px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section-content {
+    margin-left: 24px;
+}
+
+.section-header .material-icons {
+    font-size: 18px;
+}
+
+.work-experience-section {
+    padding: var(--section-padding);
+    border-bottom: var(--section-divider-border);
+}
+
+.work-experience-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.work-experience-title {
+    color: #424242;
+    font-size: var(--work-experience-title-font-size);
+    font-weight: bold;
+}
+
+.work-experience-dates {
+    font-size: var(--work-experience-summary-font-size);
+}
+
+.work-experience-summary {
+    margin-top: 4px;
+    font-style: italic;
+    font-size: var(--work-experience-summary-font-size);
+}
+
+.work-experience-bullet-list {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    margin-right: 160px;
+    padding-left: 20px;
+}
+
+.work-experience-bullet-item {
+    font-size: var(--work-experience-bullet-item-font-size);
+}
+
+.skills-section {
+    padding: var(--section-padding);
+    border-bottom: var(--section-divider-border);
+}
+
+.skills-category {
+    font-weight: bold;
+    font-size: var(--skills-skill-font-size);
+}
+
+.skills-list {
+    font-size: var(--skills-skill-font-size);
+}
+
+.education-section {
+    padding: var(--section-padding);
+}
+
+.education-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.school {
+    font-size: var(--school-font-size);
+}
+
+.degree {
+    font-size: var(--degree-font-size);
+}
+
+.education-subheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
